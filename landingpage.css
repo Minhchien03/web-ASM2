@@ -1,0 +1,166 @@
+.danhmucsanpham{
+    margin: 50px;
+}
+
+
+/* loginform */
+.slidershow {
+   
+        width: 80%; /* Điều chỉnh độ rộng của container theo mong muốn */
+        margin: 0 auto; /* Canh giữa container theo chiều ngang */
+        padding-left: 20px; /* Khoảng trống bên trái của container */
+        padding-right: 20px; /* Khoảng trống bên phải của container */
+      
+}
+.loginform{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f2f2f2;
+    }
+.loginform {
+        width: 400px;
+        padding: 16px;
+        background-color: white;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        border: 1px solid black;
+        border-radius: 4px;
+    }
+ .loginform input[type=text], input[type=password] {
+        width: 90%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    }
+    .loginform   input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+    }
+    .loginform  input[type=submit]:hover {
+        opacity:1;
+}
+
+
+
+/* registerform */
+
+.registerform body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.registerform  {
+    width: 400px;
+    padding: 16px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.registerform input[type=text],
+input[type=password] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+.registerform input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerform input[type=submit]:hover {
+    opacity: 1;
+}
+
+.registerform h2 {
+    text-align: center;
+}
+
+
+
+/* contactform */
+.contactform body {
+    font-family: Arial, sans-serif;
+}
+
+.contactform h1 {
+    color: #333;
+    margin: 10px;
+}
+
+.contactform form {
+    margin-top: 20px;
+    margin: 10px;
+
+}
+
+.contactform input[type=text], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin: 10px;
+
+}
+
+.contactform input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin: 10px;
+
+}
+
+.contactform input[type=submit]:hover {
+    opacity: 0.8;
+    margin: 10px;
+
+}
+
+/* danhmucsanpham o trang langding page */
+.danhmucsanpham {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    flex: 1 0 100%; /* Mặc định, mỗi sản phẩm sẽ chiếm 100% chiều rộng của container, tức là 1 sản phẩm trên mỗi hàng */
+}
+
+@media (min-width: 600px) {
+    .product {
+        flex: 1 0 50%; /* Khi màn hình có chiều rộng tối thiểu 600px, mỗi sản phẩm sẽ chiếm 50% chiều rộng của container, tức là 2 sản phẩm trên mỗi hàng */
+    }
+}
+
+@media (min-width: 900px) {
+    .product {
+        flex: 1 0 33.33%; /* Khi màn hình có chiều rộng tối thiểu 900px, mỗi sản phẩm sẽ chiếm 33.33% chiều rộng của container, tức là 3 sản phẩm trên mỗi hàng */
+    }
+}
